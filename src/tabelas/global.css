@@ -1,0 +1,10 @@
+@media print{
+    #termoBusca, #titulo, #menu, #btn{
+        display: none
+    }
+
+    #linha{
+        border: 2px solid black;
+        
+    }
+}

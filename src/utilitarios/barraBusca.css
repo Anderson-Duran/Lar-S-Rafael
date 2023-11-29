@@ -1,0 +1,44 @@
+.barra{
+    border: 1px solid black;
+    border-radius: 6px;
+
+}
+
+.barra svg {
+    margin: 5px;
+    width: 5%;
+}
+
+.barra input[type="text"]{
+    display: inline;
+    width: 80%;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+.resultado{
+    width: 30%;
+}
+
+.resultado ul{
+    display:none;
+    position: absolute;
+    float: left;
+    border: 1px solid gray;
+    padding: 2px;
+    background-color: darkgray;
+    width: 33%;
+    border-radius: 10px;
+
+}
+
+.resultado li{
+    list-style-type: none;
+    padding: 3px;
+}
+
+.resultado li:hover{
+    background-color: aliceblue;
+    border-radius: 10px;
+}
