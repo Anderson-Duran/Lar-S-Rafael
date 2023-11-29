@@ -67,7 +67,7 @@ export default function Menu(props) {
                     
 
                     {
-                        user.isAdmin === true?<NavbarCollapse><LinkContainer to="/cadastroUsuario"><NavDropdown.Item><strong><font color="black">GERENCIAR USUÁRIOS</font></strong></NavDropdown.Item></LinkContainer></NavbarCollapse>:''
+                        user.isAdmin === true?<NavbarCollapse><LinkContainer to="/cadastroUsuario"><NavDropdown.Item><strong><font color="white">GERENCIAR USUÁRIOS</font></strong></NavDropdown.Item></LinkContainer></NavbarCollapse>:''
                     }
 
 
