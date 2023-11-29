@@ -63,7 +63,7 @@ export default function Menu(props) {
                     </NavbarCollapse>
                     
                     <Nav>
-                        <Nav.Link href="/"><strong><font color="white">VOLTAR</font></strong></Nav.Link>
+                        <Nav.Link href="/"><strong><font color="white">SAIR</font></strong></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
