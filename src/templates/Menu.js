@@ -15,20 +15,20 @@ export default function Menu(props) {
         backgroundColor: '#f0f0f0',
         padding: '10px',
         fontWeight: 'bolder',
-      };
+    };
 
-    const dropdown={
+    const dropdown = {
         color: 'white'
     }
 
-    const {user, setUser} = useContext(AuthContext);
+    const { user, setUser } = useContext(AuthContext);
 
     return (
         <Navbar style={navbarStyle} bg="black" variant="dark" expand="lg">
             <Container id="menu">
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    
+
                     <NavbarCollapse><LinkContainer to="/" ><Navbar.Brand><font color="white"><strong>HOME</strong></font></Navbar.Brand></LinkContainer></NavbarCollapse>
 
                     <NavbarCollapse>
@@ -38,9 +38,14 @@ export default function Menu(props) {
                         </NavDropdown>
                     </NavbarCollapse>
                     <NavbarCollapse>
-                        <NavDropdown title="TURMAS" style={dropdown}>
-                            <NavbarCollapse><LinkContainer to="/cadastroTurma"><NavDropdown.Item><strong><font color="black">TURMAS</font></strong></NavDropdown.Item></LinkContainer></NavbarCollapse>
-                            <NavbarCollapse><LinkContainer to="/cadastroTurma"><NavDropdown.Item><strong><font color="black">TURMAS</font></strong></NavDropdown.Item></LinkContainer></NavbarCollapse>
+                        <NavDropdown title="DOCENTES" id="basic-nav-dropdown">
+
+                            <LinkContainer to="/cadastroCursos"><NavDropdown.Item><strong>CURSO</strong></NavDropdown.Item></LinkContainer>
+
+                            <LinkContainer to="/cadastroProfessores"><NavDropdown.Item><strong>PROFESSOR</strong></NavDropdown.Item></LinkContainer>
+
+                            <LinkContainer to="/cadastroTurmas"><NavDropdown.Item><strong>TURMAS</strong></NavDropdown.Item></LinkContainer>
+
                         </NavDropdown>
                     </NavbarCollapse>
                     <NavbarCollapse>
@@ -49,7 +54,7 @@ export default function Menu(props) {
                             <NavbarCollapse><LinkContainer to="/cadastroDoacao"><NavDropdown.Item><strong><font color="black">DOAÇÃO</font></strong></NavDropdown.Item></LinkContainer></NavbarCollapse>
                         </NavDropdown>
                     </NavbarCollapse>
-                    
+
                     <NavbarCollapse>
                         <NavDropdown title="VISITANTES" style={dropdown}>
                             <NavDropdown.Item><LinkContainer to="/cadastroVisitantes"><NavDropdown.Item><strong><font color="black">VISITANTES</font></strong></NavDropdown.Item></LinkContainer></NavDropdown.Item>
@@ -60,14 +65,14 @@ export default function Menu(props) {
 
                     <NavbarCollapse>
                         <NavDropdown title="SUGESTÕES" style={dropdown}>
-                        <LinkContainer to="/cadastroSugestao"><NavDropdown.Item><strong><font color="black">SUGESTÕES</font></strong></NavDropdown.Item></LinkContainer>
-                        <LinkContainer to="/cadastroSugestao"><NavDropdown.Item><strong><font color="black">SUGESTÕES</font></strong></NavDropdown.Item></LinkContainer>
+                            <LinkContainer to="/cadastroSugestao"><NavDropdown.Item><strong><font color="black">SUGESTÕES</font></strong></NavDropdown.Item></LinkContainer>
+                            <LinkContainer to="/cadastroSugestao"><NavDropdown.Item><strong><font color="black">SUGESTÕES</font></strong></NavDropdown.Item></LinkContainer>
                         </NavDropdown>
                     </NavbarCollapse>
-                    
+
 
                     {
-                        user.isAdmin === true?<NavbarCollapse><LinkContainer to="/cadastroUsuario"><NavDropdown.Item><strong><font color="white">GERENCIAR USUÁRIOS</font></strong></NavDropdown.Item></LinkContainer></NavbarCollapse>:''
+                        user.isAdmin === true ? <NavbarCollapse><LinkContainer to="/cadastroUsuario"><NavDropdown.Item><strong><font color="white">GERENCIAR USUÁRIOS</font></strong></NavDropdown.Item></LinkContainer></NavbarCollapse> : ''
                     }
 
 
