@@ -38,7 +38,7 @@ export default function Menu(props) {
                         </NavDropdown>
                     </NavbarCollapse>
                     <NavbarCollapse>
-                        <NavDropdown title="DOCENTES" id="basic-nav-dropdown">
+                        <NavDropdown title="DOCENTES" id="basic-nav-dropdown" style={dropdown}>
 
                             <LinkContainer to="/cadastroCursos"><NavDropdown.Item><strong>CURSO</strong></NavDropdown.Item></LinkContainer>
 
