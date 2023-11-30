@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
-import { urlBase, urlBase2 } from '../utilitarios/definiçoes';
+import { urlBase, urlBase2 } from '../utilitarios/definicoes';
 import CaixaSelecao from '../utilitarios/Combobox';
 import TabelaProfessoresSelecionados from './tabelaProfessoresSelecionados';
 

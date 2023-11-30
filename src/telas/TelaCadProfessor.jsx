@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import TabelaProfessor from "../tabelas/tabelaProfessor";
 import { useState, useEffect } from "react";
 import Pagina from "../templates/Pagina";
-import { urlBase } from "../utilitarios/definiçoes";
+import { urlBase } from "../utilitarios/definicoes";
 
 export default function TelaCadastroProfessor(props){
     const [professor, setProfessor] = useState([]);

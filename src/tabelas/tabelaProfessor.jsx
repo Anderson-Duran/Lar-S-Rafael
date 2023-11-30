@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Table, Button, Form, Container, Modal } from "react-bootstrap";
-import { urlBase } from "../utilitarios/definiçoes";
+import { urlBase } from "../utilitarios/definicoes";
 import '../utilitarios/print.css';
 
 export default function TabelaProfessor(props) {

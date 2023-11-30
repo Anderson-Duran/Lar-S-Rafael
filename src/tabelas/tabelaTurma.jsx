@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Table, Button, Form, Container, Modal } from "react-bootstrap";
-import { urlBase2 } from "../utilitarios/definiçoes";
+import { urlBase2 } from "../utilitarios/definicoes";
 
 
 export default function TabelaTurmas(props) {

@@ -1,0 +1,5 @@
+@media print {
+    #btnImprimir, #btnCad, #btnCab, #btnMenu, #termoBusca, #btnHelp, #btnAcao, #btnExclui, #btnEdita, #btnCaixa {
+    display: none;
+    }
+}

@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import TabelaTurma from "../tabelas/tabelaTurma";
 import { useState, useEffect } from "react";
 import Pagina from "../templates/Pagina";
-import { urlBase2 } from "../utilitarios/definiçoes";
+import { urlBase2 } from "../utilitarios/definicoes";
 
 export default function TelaCadastroTurmas(props){
     const [turmas, setTurmas] = useState([]);

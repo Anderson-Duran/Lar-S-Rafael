@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import TabelaCursos from "../tabelas/tabelaCursos";
 import { useState, useEffect } from "react";
 import Pagina from "../templates/Pagina";
-import { urlBase3 } from "../utilitarios/definiçoes";
+import { urlBase3 } from "../utilitarios/definicoes";
 
 export default function TelaCadastroCursos(props){
     const [cursos, setCursos] = useState([]);
