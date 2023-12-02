@@ -7,6 +7,9 @@ import TelaCadastroCategorias from "./telas/TelaCadCategorias";
 import TelaCadPacientes from "./telas/TelaCadPacientes";
 import TelaCadMedicacoes from "./telas/TelaCadMedicacoes";
 import TelaCadUser from "./telas/TelaCadUser";
+import TelaCadSugestao from "./telas/TelaCadSugestao";
+import TelaCadProjeto from "./telas/TelaCadProjeto";
+import TelaCadPrestador from "./telas/TelaCadPrestador";
 import { useContext } from "react";
 import { AuthContext } from "./contextos/authContext";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -35,6 +38,9 @@ function App() {
           <Route path="/cadastroCategorias" element={<TelaCadastroCategorias />} />
           <Route path="/cadastroMedicacoes" element={<TelaCadMedicacoes />} />
           <Route path="/cadastroUsuario" element={<Private><TelaCadUser /></Private>} />
+          <Route path="/cadastroSugestao" element={<TelaCadSugestao/>} />
+          <Route path="/TelaCadPrestador" element={<TelaCadPrestador/>} />
+          <Route path="/TelaCadProjeto" element={<TelaCadProjeto/>} />
           <Route path="/home" element={<TelaMenu />} />
           <Route path="*" element={<Tela404 />} />
         </Routes>

@@ -17,8 +17,6 @@ function FormSignIn() {
         if (email.current.value !== '' && password.current.value !== '') {
             const userData = { email: email.current.value, password: password.current.value };
           
-            
-
             try {
                 const rawResponse = await fetch(urlBase, {
                     method: "POST",

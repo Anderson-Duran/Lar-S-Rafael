@@ -1,0 +1,97 @@
+#barra{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:260px;
+    border-radius: 5px;
+  }
+
+  .busca {
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px rgb rgb(23, 23, 25);
+}
+
+.busca svg {
+    margin: 5px;
+
+}
+
+.busca input[type="text"] {
+    display: inline;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    width: 90%;
+
+}
+
+.resultado {
+    width: 90%;
+}
+
+ul {
+    display: none;
+    position: absolute;
+    float: left;
+    border: 1px solid black;
+    box-shadow: 10px 5px 5px rgb rgb(23, 23, 25);
+    margin: 0;
+    padding: 1px;
+    background-color: whitesmoke;
+    width: 90%;
+
+}
+
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 3px;
+    border-bottom: 2px;
+}
+
+li:hover{
+    background-color: black;
+    color: white;
+}
+
+img {
+    position: absolute;
+    width: 99%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom;
+    z-index: -1;
+    opacity: 0.3;
+  }
+
+  .banner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+ .tela {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+ }
+
+ @media print {
+    #btnExcluir, #btnCadastrar, #btdEditar, #menu, #pesquisa, #btn {
+        display: none;
+    }
+
+    #linha{
+        border: 2px solid black;
+        
+    }
+}

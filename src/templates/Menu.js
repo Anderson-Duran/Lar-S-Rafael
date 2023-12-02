@@ -61,7 +61,8 @@ export default function Menu(props) {
                     <NavbarCollapse>
                         <NavDropdown title="SUGESTÕES" style={dropdown}>
                         <LinkContainer to="/cadastroSugestao"><NavDropdown.Item><strong><font color="black">SUGESTÕES</font></strong></NavDropdown.Item></LinkContainer>
-                        <LinkContainer to="/cadastroSugestao"><NavDropdown.Item><strong><font color="black">SUGESTÕES</font></strong></NavDropdown.Item></LinkContainer>
+                        <LinkContainer to="/TelaCadPrestador"><NavDropdown.Item><strong><font color="black">PRESTADORES</font></strong></NavDropdown.Item></LinkContainer>
+                        <LinkContainer to="/TelaCadProjeto"><NavDropdown.Item><strong><font color="black">PROJETOS</font></strong></NavDropdown.Item></LinkContainer>
                         </NavDropdown>
                     </NavbarCollapse>
                     

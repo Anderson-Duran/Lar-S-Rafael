@@ -17,3 +17,16 @@ export const AjudaCategorias = <p>Nessa página você terá acesso a lista de to
     As ações incluem a edição (botão com lápis), na qual pode se editar os dados da categoria, e exclusão (botão com lixeira), na qual irá excluir a categoria.<br/><br />
     No final da página possui o botão Relatório que permiti imprimir ou salvar como pdf a lista de categorias de visitantes cadastrados.<br/><br />
     E por fim o botão Cadastrar que irá direcionar o usuário ao formulário de cadastro de uma nova categoria.</p>
+
+
+export const AjudaSugestao = 
+    <p>Nessa página você terá acesso a lista de todas as sugestões cadastrados!<br/><br />
+        Clicando nas opções em "Ações" poderá editar ou excluir sugestões cadastradas, além de incluir novas.</p>
+
+export const AjudaProjetos = 
+    <p>Nessa página você terá acesso a lista de todos os projetos de melhoria cadastrados!<br/><br />
+       Clicando nas opções em "Ações" poderá editar ou excluir projetos de melhorias cadastrados, além de incluir novos.</p>
+
+export const AjudaPrestadores = 
+    <p>Nessa página você terá acesso a lista de todos os prestadores cadastrados!<br/><br/>
+       Clicando nas opções em "Ações" poderá editar ou excluir prestadores cadastradas, além de incluir novos.</p>
