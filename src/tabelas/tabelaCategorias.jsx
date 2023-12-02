@@ -1,5 +1,5 @@
 import { Table, Button, Form, Container } from "react-bootstrap";
-import { urlBase3 } from "../utilitarios/definiçoes";
+import { urlBase3 } from "../utilitarios/definicoes";
 import "./global.css";
 import Ajuda from "../utilitarios/ajuda";
 import { AjudaCategorias } from "../utilitarios/textosDeAjuda";

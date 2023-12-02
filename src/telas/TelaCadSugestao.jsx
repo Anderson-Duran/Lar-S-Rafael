@@ -1,6 +1,6 @@
 import FormSugestao from "../formularios/FormularioSugest";
 import TabelaSugest from "../tabelas/TabelaSugest";
-import { urlBaseSugest } from "../utilitarios/definiçoes";
+import { urlBaseSugest } from "../utilitarios/definicoes";
 import { useState, useEffect} from "react";
 
 export default function TelaCadSugest(props){

@@ -1,7 +1,7 @@
 import TabelaPrestador from "../tabelas/TabelaPrestadores";
 import FormularioPrestador from "../formularios/FormularioPrestador";
 import { useState, useEffect } from "react";
-import { urlBaseSugest } from "../utilitarios/definiçoes";
+import { urlBaseSugest } from "../utilitarios/definicoes";
 
 export default function TelaCadPrestador(props){
 

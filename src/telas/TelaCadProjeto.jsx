@@ -1,7 +1,7 @@
 import TabelaProjetos from "../tabelas/TabelaProjetos";
 import Formulario from "../formularios/FormularioProjeto";
 import { useState, useEffect} from "react";
-import { urlBaseSugest } from "../utilitarios/definiçoes";
+import { urlBaseSugest } from "../utilitarios/definicoes";
 
 export default function TelaCadProjeto(props) {
     const [projeto, setProjeto] = useState([]);

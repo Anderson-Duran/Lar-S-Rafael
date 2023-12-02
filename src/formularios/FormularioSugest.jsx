@@ -1,7 +1,7 @@
 import { Container, FloatingLabel, FormControl, FormLabel } from "react-bootstrap";
 import { Form, Button, Row, Col } from "react-bootstrap";
 import { useState } from "react";
-import { urlBaseSugest } from "../utilitarios/definiçoes";
+import { urlBaseSugest } from "../utilitarios/definicoes";
 import Pagina from "../templates/Pagina";
 import ReactInputMask from "react-input-mask";
 
