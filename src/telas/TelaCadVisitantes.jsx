@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import TabelaVisitantes from "../tabelas/tabelaVisitantes";
 import { useState, useEffect } from "react";
 import Pagina from "../templates/Pagina";
-import { urlBase } from "../utilitarios/definiçoes";
+import { urlBase } from "../utilitarios/definicoes";
 
 export default function TelaCadastroVisitantes(props){
     const [visitantes, setVisitantes] = useState([]);

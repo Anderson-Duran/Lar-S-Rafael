@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import ReactInputMask from "react-input-mask";
-import { urlBase, urlBase3 } from '../utilitarios/definiçoes';
+import { urlBase, urlBase3 } from '../utilitarios/definicoes';
 import CaixaSelecao from '../utilitarios/Combobox';
 
 const boxcad_style = {

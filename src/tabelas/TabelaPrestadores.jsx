@@ -1,6 +1,6 @@
 import { Button, Container, Table, Form } from "react-bootstrap";
 import '../Estilizacao/Estilo.css';
-import { urlBaseSugest } from "../utilitarios/definiçoes";
+import { urlBaseSugest } from "../utilitarios/definicoes";
 import Pagina from "../templates/Pagina";
 import Ajuda from "../utilitarios/ajuda";
 import { AjudaPrestadores } from "../utilitarios/textosDeAjuda";

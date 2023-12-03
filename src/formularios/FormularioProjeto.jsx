@@ -3,7 +3,7 @@ import BarraBusca from "../utilitarios/BarrabuscaSugest";
 import { useEffect, useState } from "react";
 import '../Estilizacao/Estilo.css';
 import Pagina from "../templates/Pagina";
-import { urlBaseSugest } from "../utilitarios/definiçoes";
+import { urlBaseSugest } from "../utilitarios/definicoes";
 
 export default function Formulario(props){
 

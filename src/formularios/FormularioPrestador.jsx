@@ -5,7 +5,7 @@ import CaixaSelecao from "../utilitarios/CaixaSelecao";
 import TabelaItensSugestoes from "../tabelas/TabelaItens";
 import Pagina from "../templates/Pagina";
 import ReactInputMask from "react-input-mask";
-import { urlBaseSugest } from "../utilitarios/definiçoes";
+import { urlBaseSugest } from "../utilitarios/definicoes";
 
 export default function FormularioPrestador(props){
 

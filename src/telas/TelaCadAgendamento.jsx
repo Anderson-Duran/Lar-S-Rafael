@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import TabelaAgendamentos from "../tabelas/tabelaAgendamento";
 import { useState, useEffect } from "react";
 import Pagina from "../templates/Pagina";
-import { urlBase2 } from "../utilitarios/definiçoes";
+import { urlBase2 } from "../utilitarios/definicoes";
 
 export default function TelaCadastroAgendamentos(props){
     const [agendamentos, setAgendamentos] = useState([]);
