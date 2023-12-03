@@ -50,8 +50,11 @@ export default function Menu(props) {
                     </NavbarCollapse>
                     <NavbarCollapse>
                         <NavDropdown title="DOAÇÕES" style={dropdown}>
-                            <NavbarCollapse><LinkContainer to="/cadastroDoacao"><NavDropdown.Item><strong><font color="black">DOAÇÃO</font></strong></NavDropdown.Item></LinkContainer></NavbarCollapse>
-                            <NavbarCollapse><LinkContainer to="/cadastroDoacao"><NavDropdown.Item><strong><font color="black">DOAÇÃO</font></strong></NavDropdown.Item></LinkContainer></NavbarCollapse>
+                            <NavbarCollapse> <LinkContainer to="/cadastroMotoboys"><NavDropdown.Item><strong>Doadores</strong></NavDropdown.Item></LinkContainer>
+
+                                <LinkContainer to="/cadastroEntrega"><NavDropdown.Item><strong>Voluntarios</strong></NavDropdown.Item></LinkContainer>
+
+                                <LinkContainer to="/cadastroPedidos"><NavDropdown.Item><strong>Valores</strong></NavDropdown.Item></LinkContainer></NavbarCollapse>
                         </NavDropdown>
                     </NavbarCollapse>
 
@@ -67,7 +70,7 @@ export default function Menu(props) {
                         <NavDropdown title="SUGESTÕES" style={dropdown}>
                             <LinkContainer to="/cadastroSugestao"><NavDropdown.Item><strong><font color="black">SUGESTÕES</font></strong></NavDropdown.Item></LinkContainer>
                             <LinkContainer to="/TelaCadPrestador"><NavDropdown.Item><strong><font color="black">PRESTADORES</font></strong></NavDropdown.Item></LinkContainer>
-                        <LinkContainer to="/TelaCadProjeto"><NavDropdown.Item><strong><font color="black">PROJETOS</font></strong></NavDropdown.Item></LinkContainer>
+                            <LinkContainer to="/TelaCadProjeto"><NavDropdown.Item><strong><font color="black">PROJETOS</font></strong></NavDropdown.Item></LinkContainer>
                         </NavDropdown>
                     </NavbarCollapse>
 
