@@ -50,6 +50,9 @@ function App() {
           <Route path="/cadastroSugestao" element={<TelaCadSugestao/>} />
           <Route path="/TelaCadPrestador" element={<TelaCadPrestador/>} />
           <Route path="/TelaCadProjeto" element={<TelaCadProjeto/>} />
+          <Route path="/cadastroMotoboys" element={<TelaCadMotoboys/>}/>
+          <Route path="/cadastroEntrega" element={<TelaCadEntrega/>}/>
+          <Route path="/cadastroPedidos" element={<TelaCadastroPedidos/>}/>
           <Route path="/home" element={<TelaMenu />} />
           <Route path="*" element={<Tela404 />} />
         </Routes>
