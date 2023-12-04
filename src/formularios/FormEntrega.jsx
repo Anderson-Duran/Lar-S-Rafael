@@ -25,7 +25,7 @@ export default function FormEntrega(props) {
   const [validated, setValidated] = useState(false);
   const [entrega, setEntrega] = useState(props.entrega);
   const [motoboySelecionado, setMotoboySelecionado] = useState({});
-  const [listaMotoboysSelecionados, setListaMotoboysSelecionados]= useState([]);
+  const [listaMotoboysSelecionados, setListaMotoboysSelecionados]= useState([]);  
 
   function manipularMudanca(e) {
     const elemForm = e.currentTarget;
