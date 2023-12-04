@@ -14,3 +14,7 @@ export const urlBaseSugest = "http://localhost:4039";
 export const urlVisitantes = "https://129.146.68.51/aluno15-pfsii/visitantes";
 export const urlAgendamentos = "https://129.146.68.51/aluno15-pfsii/agendamento";
 export const urlCategorias = "https://129.146.68.51/aluno15-pfsii/categorias";
+
+export const urlBase4 =  "http://localhost:3000/motoboys";
+export const urlBase5 = "http://localhost:3000/entrega";
+export const urlBase6 = "http://localhost:3000/pedidos";
