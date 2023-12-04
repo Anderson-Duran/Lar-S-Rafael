@@ -1,0 +1,35 @@
+
+img{
+    height: 100vh;
+    position: fixed;
+    opacity: 0.2;
+    background-size: cover;
+    z-index: -1;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+}
+
+@media print{
+
+    *{
+        font-size: 12px!important;
+    }
+
+    #termoBusca, button, #menu, #btn, #actions, a, .shit, .btn{
+        display:none !important;
+    }
+
+    body{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #table{
+        left: 1.5rem;
+        position: absolute;
+    } 
+}
