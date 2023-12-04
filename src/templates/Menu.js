@@ -55,7 +55,7 @@ export default function Menu(props) {
 
                             <LinkContainer to="/cadastroEntrega"><NavDropdown.Item><strong>Voluntario</strong></NavDropdown.Item></LinkContainer>
 
-                            <LinkContainer to="/cadastroPedido"><NavDropdown.Item><strong>Valores</strong></NavDropdown.Item></LinkContainer>
+                            <LinkContainer to="/cadastroPedidos"><NavDropdown.Item><strong>Valores</strong></NavDropdown.Item></LinkContainer>
 
                         </NavDropdown>
                     </NavbarCollapse>
