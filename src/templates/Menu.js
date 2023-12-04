@@ -49,12 +49,12 @@ export default function Menu(props) {
                         </NavDropdown>
                     </NavbarCollapse>
                     <NavbarCollapse>
-                        <NavDropdown title="DOAÇÕES" style={dropdown}>
+                        <NavDropdown title="DOADOR" id="basic-nav-dropdown" style={dropdown}>
                             <LinkContainer to="/cadastroMotoboys"><NavDropdown.Item><strong>Doadores</strong></NavDropdown.Item></LinkContainer>
 
-                                <LinkContainer to="/cadastroEntrega"><NavDropdown.Item><strong>Voluntarios</strong></NavDropdown.Item></LinkContainer>
+                            <LinkContainer to="/cadastroEntrega"><NavDropdown.Item><strong>Voluntarios</strong></NavDropdown.Item></LinkContainer>
 
-                                <LinkContainer to="/cadastroPedidos"><NavDropdown.Item><strong>Valores</strong></NavDropdown.Item></LinkContainer>
+                            <LinkContainer to="/cadastroPedidos"><NavDropdown.Item><strong>Valores</strong></NavDropdown.Item></LinkContainer>
                         </NavDropdown>
                     </NavbarCollapse>
 
