@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
-import { urlBase3 } from '../utilitarios/definicoes';
+import { urlCategorias } from '../utilitarios/definicoes';
 
 const boxcad_style = {
   padding: '2px',
@@ -39,7 +39,7 @@ export default function FormCategoria(props) {
       event.stopPropagation();
     } else {
         if(!props.modoEdicao){
-          fetch(urlBase3, {
+          fetch(urlCategorias, {
             method: "POST",
             headers: {
               "Content-Type": "application/json"
@@ -51,7 +51,7 @@ export default function FormCategoria(props) {
             })
             .then((dados) => {
                 props.setModoEdicao(false);
-                fetch(urlBase3, { method: "GET" })
+                fetch(urlCategorias, { method: "GET" })
                 .then((resposta) => {
                   return resposta.json();
                 })
@@ -70,7 +70,7 @@ export default function FormCategoria(props) {
             });
         }
         else{
-          fetch(urlBase3, {
+          fetch(urlCategorias, {
             method:"PUT",
             headers:{"Content-Type":"application/json"},
             body: JSON.stringify(categoria)

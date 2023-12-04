@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
-import { urlBase, urlBase2 } from '../utilitarios/definicoes';
+import { urlVisitantes, urlAgendamentos } from '../utilitarios/definicoes';
 import CaixaSelecao from '../utilitarios/Combobox';
 import TabelaVisitantesSelecionados from './tabelaVisitantesSelecionados';
 
@@ -73,7 +73,7 @@ export default function FormAgendamento(props) {
               visitante:{codigo: visitante.codigo}
             })
           }
-          fetch(urlBase2, {
+          fetch(urlAgendamentos, {
             method: "POST",
             headers: {
               "Content-Type": "application/json"
@@ -91,7 +91,7 @@ export default function FormAgendamento(props) {
             })
             .then((dados) => {
                 props.setModoEdicao(false);
-                fetch(urlBase2, { method: "GET" })
+                fetch(urlAgendamentos, { method: "GET" })
                 .then((resposta) => {
                   return resposta.json();
                 })
@@ -110,7 +110,7 @@ export default function FormAgendamento(props) {
             });
         }
         else{
-          fetch(urlBase2, {
+          fetch(urlAgendamentos, {
             method:"PUT",
             headers:{"Content-Type":"application/json"},
             body: JSON.stringify(agendamento)
@@ -192,7 +192,7 @@ export default function FormAgendamento(props) {
       <Row>
         <Form.Group as={Col} md="6">
             <Form.Label>Visitante</Form.Label>
-            <CaixaSelecao endFonteDados={urlBase}
+            <CaixaSelecao endFonteDados={urlVisitantes}
                           campoChave={"codigo"}
                           campoExibicao={"nome"}
                           funcaoSelecao={setVisitanteSelecionado} />

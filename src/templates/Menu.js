@@ -29,7 +29,7 @@ export default function Menu(props) {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
 
-                    <NavbarCollapse><LinkContainer to="/" ><Navbar.Brand><font color="white"><strong>HOME</strong></font></Navbar.Brand></LinkContainer></NavbarCollapse>
+                    <NavbarCollapse><LinkContainer to="/home" ><Navbar.Brand><font color="white"><strong>HOME</strong></font></Navbar.Brand></LinkContainer></NavbarCollapse>
 
                     <NavbarCollapse>
                         <NavDropdown title="PACIENTES" style={dropdown}>

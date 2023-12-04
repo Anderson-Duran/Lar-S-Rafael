@@ -1,5 +1,5 @@
 import { Table, Button, Form, Container } from "react-bootstrap";
-import { urlBase } from "../utilitarios/definicoes";
+import { urlVisitantes } from "../utilitarios/definicoes";
 import "./global.css";
 import Ajuda from "../utilitarios/ajuda";
 import { AjudaVisitantes } from "../utilitarios/textosDeAjuda";
@@ -10,7 +10,7 @@ export default function TabelaVisitantes(props){
     function filtrarVisitantes(e) {
         const termoBusca = e.currentTarget.value.toLowerCase();
       
-        fetch(urlBase, { method: "GET" })
+        fetch(urlVisitantes, { method: "GET" })
           .then((resposta) => resposta.json())
           .then((listaVisitantes) => {
             if (Array.isArray(listaVisitantes)) {
@@ -26,7 +26,7 @@ export default function TabelaVisitantes(props){
       function filtrarVisitantesCat(e) {
         const termoBusca2 = e.currentTarget.value.toLowerCase();
       
-        fetch(urlBase, { method: "GET" })
+        fetch(urlVisitantes, { method: "GET" })
           .then((resposta) => resposta.json())
           .then((listaVisitantes) => {
             if (Array.isArray(listaVisitantes)) {

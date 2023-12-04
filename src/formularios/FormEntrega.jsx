@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
-import { urlBase, urlBase2 } from '../utilitarios/definiçoes';
+import { urlBase, urlBase2 } from '../utilitarios/definicoes';
 import CaixaSelecao from '../utilitarios/Combobox';
 import TabelaMotoboysSelecionados from './tabelaMotoboysSelecionados';
 
@@ -25,7 +25,7 @@ export default function FormEntrega(props) {
   const [validated, setValidated] = useState(false);
   const [entrega, setEntrega] = useState(props.entrega);
   const [motoboySelecionado, setMotoboySelecionado] = useState({});
-  const [listaMotoboysSelecionados, setListaMotoboysSelecionados]= useState([]);
+  const [listaMotoboysSelecionados, setListaMotoboysSelecionados]= useState([]);  
 
   function manipularMudanca(e) {
     const elemForm = e.currentTarget;

@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import TabelaAgendamentos from "../tabelas/tabelaAgendamento";
 import { useState, useEffect } from "react";
 import Pagina from "../templates/Pagina";
-import { urlBase2 } from "../utilitarios/definicoes";
+import { urlAgendamentos } from "../utilitarios/definicoes";
 
 export default function TelaCadastroAgendamentos(props){
     const [agendamentos, setAgendamentos] = useState([]);
@@ -19,7 +19,7 @@ export default function TelaCadastroAgendamentos(props){
     
 
     useEffect(()=>{
-        fetch(urlBase2, {method:"GET"})
+        fetch(urlAgendamentos, {method:"GET"})
         .then((resposta)=>{return resposta.json()})
         .then((dados)=>{
             if (Array.isArray(dados)){
@@ -40,7 +40,7 @@ export default function TelaCadastroAgendamentos(props){
 
     function excluirAgendamento(agendamento) {
         if (window.confirm("Confirmar exclusão?")) {
-          fetch(urlBase2, {
+          fetch(urlAgendamentos, {
             method: "DELETE",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(agendamento),
