@@ -13,9 +13,7 @@ import TelaCadUser from "./telas/TelaCadUser";
 import TelaCadSugestao from "./telas/TelaCadSugestao";
 import TelaCadProjeto from "./telas/TelaCadProjeto";
 import TelaCadPrestador from "./telas/TelaCadPrestador";
-import TelaCadMotoboys from "./telas/TelaCadMotoboys";
-import TelaCadEntrega from "./telas/TelaCadEntrega";
-import TelaCadastroPedidos from "./telas/TelaCadPedidos";
+
 import { useContext } from "react";
 import { AuthContext } from "./contextos/authContext";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
