@@ -17,7 +17,7 @@ export default function TabelaAgendamentos(props){
                 const data = agendamento.data.toLowerCase();
                 
                 return data.includes(termoBusca);
-              });
+              }); 
       
               props.setAgendamentos(resultado);
             }
