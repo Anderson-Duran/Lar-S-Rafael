@@ -1,5 +1,5 @@
 import { Table, Button, Form, Container } from "react-bootstrap";
-import { urlBase2 } from "../utilitarios/definiçoes";
+import { urlBase2 } from "../utilitarios/definicoes";
 
 export default function TabelaEntregas(props){
     function filtrarEntregas(e) {

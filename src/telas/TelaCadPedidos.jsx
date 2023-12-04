@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import TabelaPedidos from "../tabelas/tabelaPedidos";
 import { useState, useEffect } from "react";
 import Pagina from "../templates/Pagina";
-import { urlBase3 } from "../utilitarios/definiçoes";
+import { urlBase3 } from "../utilitarios/definicoes";
 
 export default function TelaCadastroPedidos(props){
     const [pedidos, setPedidos] = useState([]);

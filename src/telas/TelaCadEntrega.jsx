@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import TabelaEntregas from "../tabelas/tabelaEntrega";
 import { useState, useEffect } from "react";
 import Pagina from "../templates/Pagina";
-import { urlBase2 } from "../utilitarios/definiçoes";
+import { urlBase2 } from "../utilitarios/definicoes";
 
 export default function TelaCadastroEntregas(props){
     const [entregas, setEntregas] = useState([]);

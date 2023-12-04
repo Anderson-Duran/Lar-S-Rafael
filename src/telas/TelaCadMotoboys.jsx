@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import TabelaMotoboys from "../tabelas/tabelaMotoboys";
 import { useState, useEffect } from "react";
 import Pagina from "../templates/Pagina";
-import { urlBase } from "../utilitarios/definiçoes";
+import { urlBase } from "../utilitarios/definicoes";
 
 export default function TelaCadastroMotoboys(props){
     const [motoboys, setMotoboys] = useState([]);

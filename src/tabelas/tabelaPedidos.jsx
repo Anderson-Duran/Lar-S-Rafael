@@ -1,5 +1,5 @@
 import { Table, Button, Form, Container } from "react-bootstrap";
-import { urlBase3 } from "../utilitarios/definiçoes";
+import { urlBase3 } from "../utilitarios/definicoes";
 
 export default function TabelaPedidos(props){
     function filtrarPedidos(e){
