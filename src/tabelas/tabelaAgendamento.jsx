@@ -1,5 +1,5 @@
 import { Table, Button, Form, Container } from "react-bootstrap";
-import { urlBase2 } from "../utilitarios/definicoes";
+import { urlAgendamentos } from "../utilitarios/definicoes";
 import "./global.css";
 import Ajuda from "../utilitarios/ajuda";
 import { AjudaAgendamentos } from "../utilitarios/textosDeAjuda";
@@ -9,7 +9,7 @@ export default function TabelaAgendamentos(props){
     function filtrarAgendamentos(e) {
         const termoBusca = e.currentTarget.value.toLowerCase();
       
-        fetch(urlBase2, { method: "GET" })
+        fetch(urlAgendamentos, { method: "GET" })
           .then((resposta) => resposta.json())
           .then((listaAgendamentos) => {
             if (Array.isArray(listaAgendamentos)) {

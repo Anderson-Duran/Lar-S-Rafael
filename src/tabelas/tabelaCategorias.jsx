@@ -1,5 +1,5 @@
 import { Table, Button, Form, Container } from "react-bootstrap";
-import { urlBase3 } from "../utilitarios/definicoes";
+import { urlCategorias } from "../utilitarios/definicoes";
 import "./global.css";
 import Ajuda from "../utilitarios/ajuda";
 import { AjudaCategorias } from "../utilitarios/textosDeAjuda";
@@ -9,7 +9,7 @@ export default function TabelaCategorias(props){
     function filtrarCategorias(e){
         const termoBusca = e.currentTarget.value;
 
-        fetch(urlBase3, {method:"GET"})
+        fetch(urlCategorias, {method:"GET"})
         .then((resposta)=> {return resposta.json()})
         .then((listaCategorias)=>{
             if (Array.isArray(listaCategorias)){

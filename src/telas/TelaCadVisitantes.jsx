@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import TabelaVisitantes from "../tabelas/tabelaVisitantes";
 import { useState, useEffect } from "react";
 import Pagina from "../templates/Pagina";
-import { urlBase } from "../utilitarios/definicoes";
+import { urlVisitantes } from "../utilitarios/definicoes";
 
 export default function TelaCadastroVisitantes(props){
     const [visitantes, setVisitantes] = useState([]);
@@ -23,7 +23,7 @@ export default function TelaCadastroVisitantes(props){
     
 
     useEffect(()=>{
-        fetch(urlBase, {method:"GET"})
+        fetch(urlVisitantes, {method:"GET"})
         .then((resposta)=>{return resposta.json()})
         .then((dados)=>{
             if (Array.isArray(dados)){
@@ -44,7 +44,7 @@ export default function TelaCadastroVisitantes(props){
     
     function excluirVisitante(visitante) {
         if (window.confirm("Confirmar exclusão?")) {
-          fetch(urlBase, {
+          fetch(urlVisitantes, {
             method: "DELETE",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(visitante)

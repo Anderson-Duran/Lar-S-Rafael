@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import TabelaCategorias from "../tabelas/tabelaCategorias";
 import { useState, useEffect } from "react";
 import Pagina from "../templates/Pagina";
-import { urlBase3 } from "../utilitarios/definicoes";
+import { urlCategorias } from "../utilitarios/definicoes";
 
 export default function TelaCadastroCategorias(props){
     const [categorias, setCategorias] = useState([]);
@@ -17,7 +17,7 @@ export default function TelaCadastroCategorias(props){
     
 
     useEffect(()=>{
-        fetch(urlBase3, {method:"GET"})
+        fetch(urlCategorias, {method:"GET"})
         .then((resposta)=>{return resposta.json()})
         .then((dados)=>{
             if (Array.isArray(dados)){
@@ -38,7 +38,7 @@ export default function TelaCadastroCategorias(props){
     
     function excluirCategoria(categoria) {
         if (window.confirm("Confirmar exclusão?")) {
-          fetch(urlBase3, {
+          fetch(urlCategorias, {
             method: "DELETE",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(categoria)

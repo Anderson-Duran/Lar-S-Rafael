@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import ReactInputMask from "react-input-mask";
-import { urlBase, urlBase3 } from '../utilitarios/definicoes';
+import { urlVisitantes, urlCategorias } from '../utilitarios/definicoes';
 import CaixaSelecao from '../utilitarios/Combobox';
 
 const boxcad_style = {
@@ -42,7 +42,7 @@ export default function FormVisitante(props) {
       event.stopPropagation();
     } else {
         if(!props.modoEdicao){
-          fetch(urlBase, {
+          fetch(urlVisitantes, {
             method: "POST",
             headers: {
               "Content-Type": "application/json"
@@ -54,7 +54,7 @@ export default function FormVisitante(props) {
             })
             .then((dados) => {
                 props.setModoEdicao(false);
-                fetch(urlBase, { method: "GET" })
+                fetch(urlVisitantes, { method: "GET" })
                 .then((resposta) => {
                   return resposta.json();
                 })
@@ -73,7 +73,7 @@ export default function FormVisitante(props) {
             });
         }
         else{
-          fetch(urlBase, {
+          fetch(urlVisitantes, {
             method:"PUT",
             headers:{"Content-Type":"application/json"},
             body: JSON.stringify(visitante)
@@ -194,7 +194,7 @@ export default function FormVisitante(props) {
 
         <Form.Group as={Col} md="4">
           <Form.Label>Categoria</Form.Label>
-          <CaixaSelecao endFonteDados={urlBase3}
+          <CaixaSelecao endFonteDados={urlCategorias}
                         campoChave={"codigoCat"}
                         campoExibicao={"descricao"}
                         funcaoSelecao={(itemSelecionado) => {
