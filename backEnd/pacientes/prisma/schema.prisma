@@ -1,0 +1,63 @@
+// Defining Prisma client generation
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Database configuration
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// Model representing information about medicines
+model medicines {
+  id          Int       @id @default(autoincrement())
+  cpf         String    @db.VarChar(14)    // CPF (Cadastro de Pessoas Físicas) of the patient associated with the medicine
+  name        String    @db.VarChar(255)   // Name of the medicine
+  dose        String    @db.VarChar(50)    // Dose information for the medicine
+  hour1       DateTime? @db.Time(0)        // Timing for taking the medicine (1st instance)
+  hour2       DateTime? @db.Time(0)        // Timing for taking the medicine (2nd instance)
+  hour3       DateTime? @db.Time(0)        // Timing for taking the medicine (3rd instance)
+  dateStart   DateTime  @db.Date            // Start date for taking the medicine
+  dateEnd     DateTime? @db.Date            // End date for taking the medicine (optional)
+  observation String?   @db.Text            // Additional observation about the medicine (optional)
+
+  // Relation to the 'pacients' model
+  pacients    pacients  @relation(fields: [cpf], references: [cpf], onDelete: NoAction, onUpdate: NoAction, map: "medicines_ibfk_1")
+
+  // Indexing on the 'cpf' field
+  @@index([cpf], map: "cpf")
+}
+
+// Model representing a list of medicines
+model medicinesList {
+  id   Int    @id @default(autoincrement())
+  name String @db.VarChar(50)    // Name of the medicine in the list
+}
+
+// Model representing patients
+model pacients {
+  cpf          String      @id @db.VarChar(14)    // CPF (Cadastro de Pessoas Físicas) of the patient
+  name         String      @db.VarChar(150)       // Name of the patient
+  responsable  String      @db.VarChar(150)       // Person responsible for the patient
+  sex          String      @db.VarChar(9)         // Sex of the patient
+  birthDate    DateTime    @db.Date               // Birth date of the patient
+  zipCode      String      @db.VarChar(9)         // Zip code of the patient
+  address      String      @db.VarChar(150)       // Address of the patient
+  neighborhood String      @db.VarChar(150)       // Neighborhood of the patient
+  city         String      @db.VarChar(150)       // City of the patient
+  state        String      @db.Char(2)            // State of the patient
+  phone        String?     @db.VarChar(15)        // Phone number of the patient (optional)
+
+  // Relation to the 'medicines' model
+  medicines    medicines[]
+}
+
+// Model representing users (presumably for authentication)
+model users {
+  id       Int     @id @default(autoincrement())
+  name     String? @db.VarChar(150)    // Name of the user
+  email    String  @db.VarChar(150) @unique    // Email of the user (unique constraint)
+  password String  @db.VarChar(10)     // Password of the user
+  isAdmin  Boolean @default(false)     // Flag indicating if the user is an admin
+}
